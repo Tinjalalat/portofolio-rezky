@@ -365,6 +365,22 @@ body.lightbox-open .cursor-dot { background:#ff6a00 !important; box-shadow:0 0 1
 .pcard-tech { display:flex; flex-wrap:wrap; gap:8px; }
 .pcard-tech span { padding:4px 12px; background:var(--bg-2); border:1px solid var(--border); border-radius:6px; font-size:0.75rem; color:var(--text-2); font-family:'JetBrains Mono',monospace; }
 
+.pcard-actions { margin-top:18px; padding-top:16px; border-top:1px solid var(--border); display:flex; align-items:center; gap:12px; }
+.pcard-btn {
+  display:inline-flex; align-items:center; gap:8px; padding:8px 18px; border-radius:8px;
+  background:var(--bg-2); border:1.5px solid var(--border);
+  font-family:'Space Grotesk',sans-serif; font-size:0.82rem; font-weight:600; color:var(--text);
+  text-decoration:none; transition:all 0.3s var(--ease); cursor:pointer;
+}
+.pcard-btn:hover {
+  background:var(--gradient); color:#ffffff; border-color:transparent;
+  transform:translateY(-2px); box-shadow:0 4px 15px rgba(249,115,22,0.3);
+}
+.pcard-btn svg { transition:transform 0.3s; }
+.pcard-btn:hover svg { transform:scale(1.1); }
+
+a.work-image { display:block; text-decoration:none; color:inherit; }
+
 /* ===== Experience ===== */
 .exp-card-premium { position:relative; max-width:800px; margin:0 auto; border-radius:var(--radius); overflow:hidden; background:var(--bg-card); border:1px solid var(--border); box-shadow:var(--shadow); transition:all 0.4s; }
 .exp-card-premium:hover { border-color:var(--border-hover); box-shadow:var(--shadow-glow); }
